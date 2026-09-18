@@ -1,0 +1,45 @@
+---
+// 站点信息暂时写死在布局里；抽成配置文件是后续任务 T3 的范围。
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "Mars 的个人主页" } = Astro.props;
+const siteName = "Mars Du";
+const nav = [
+  { href: "/", label: "首页" },
+  { href: "/about/", label: "关于" },
+  { href: "/articles/", label: "文章" },
+];
+const current = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} · {siteName}</title>
+    <link rel="stylesheet" href="/styles/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">{siteName}</a>
+      <nav aria-label="主导航">
+        {nav.map((item) => (
+          <a href={item.href} aria-current={current === item.href ? "page" : undefined}>
+            {item.label}
+          </a>
+        ))}
+      </nav>
+    </header>
+    <main class="site-main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <span>© 2026 {siteName}</span>
+      <a href="https://github.com/csthink" rel="me">GitHub</a>
+    </footer>
+  </body>
+</html>

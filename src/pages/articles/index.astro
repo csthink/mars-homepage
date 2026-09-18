@@ -1,0 +1,21 @@
+---
+import Base from "../../layouts/Base.astro";
+// 占位列表：正式文章接入后由内容集合生成。
+const articles = [
+  { title: "为什么要把研发流程做成产品", date: "2026-09", href: "#" },
+  { title: "个人工作台的三类使用方式", date: "2026-09", href: "#" },
+];
+---
+
+<Base title="文章" description="Mars 的文章列表">
+  <h1>文章</h1>
+  <ul class="list">
+    {articles.map((a) => (
+      <li>
+        <a href={a.href}>{a.title}</a>
+        <time datetime={a.date}>{a.date}</time>
+      </li>
+    ))}
+  </ul>
+  <p class="hint">以上为占位条目，尚未发布正文。</p>
+</Base>

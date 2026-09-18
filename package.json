@@ -1,0 +1,20 @@
+{
+  "name": "mars-homepage",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Mars 的个人主页：Astro 静态站点。",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check && npm run build && node scripts/check-site.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.13.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.9.2"
+  }
+}
