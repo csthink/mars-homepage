@@ -1,0 +1,389 @@
+<mxfile host="Electron">
+  <diagram name="MVP Workflow v5" id="69jvR29wYWPG3z2vFW38">
+    <mxGraphModel topologyVersion="5" dx="1888" dy="895" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zpEAhJcCgUedrQsony70-6" topologyEdgeId="E-D01" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-7" connectable="0" parent="zpEAhJcCgUedrQsony70-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Define Task" vertex="1">
+          <mxGeometry relative="1" x="-0.0758" y="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;labelBackgroundColor=none;strokeColor=#82b366;" value="Human&lt;br&gt;Define Task" topologyNodeId="N-DEF-HUMAN" semanticType="HUMAN_ACTION" vertex="1">
+          <mxGeometry height="60" width="195" x="564.5" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-73" topologyEdgeId="E-D02" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Candidate Task Definition" topologyNodeId="N-DEF-CANDIDATE" semanticType="ARTIFACT" vertex="1">
+          <mxGeometry height="60" width="120" x="602" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-11" topologyEdgeId="E-D03" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-12" connectable="0" parent="zpEAhJcCgUedrQsony70-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Enabled" vertex="1">
+          <mxGeometry relative="1" x="0.4698" y="3" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-70" topologyEdgeId="E-D04" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="978" y="897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-71" connectable="0" parent="zpEAhJcCgUedrQsony70-70" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Disabled" vertex="1">
+          <mxGeometry relative="1" x="-0.6515" y="5" as="geometry">
+            <mxPoint y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-8" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Review Definition&lt;br&gt;Enabled?" topologyNodeId="N-DEF-REVIEW-CONFIG" semanticType="CONFIGURATION_DECISION" vertex="1">
+          <mxGeometry height="91" width="108" x="608" y="347" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-14" topologyEdgeId="E-D05" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Control Plane&lt;br&gt;Dispatch Definition Review" topologyNodeId="N-DEF-REVIEW-DISPATCH" semanticType="CONTROL_PLANE_ORCHESTRATOR" vertex="1">
+          <mxGeometry height="60" width="120" x="602" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-66" topologyEdgeId="E-D06" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-67" connectable="0" parent="zpEAhJcCgUedrQsony70-66" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Reviewer Verdict" vertex="1">
+          <mxGeometry relative="1" x="-0.1739" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Review Definition&lt;br&gt;Reviewer" topologyNodeId="N-DEF-REVIEWER" semanticType="REVIEW_MODULE" vertex="1">
+          <mxGeometry height="60" width="120" x="602" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-22" topologyEdgeId="E-D07" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-23" connectable="0" parent="zpEAhJcCgUedrQsony70-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="PASS" vertex="1">
+          <mxGeometry relative="1" x="0.4039" y="2" as="geometry">
+            <mxPoint x="-56" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-61" topologyEdgeId="E-D08" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-62" connectable="0" parent="zpEAhJcCgUedrQsony70-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="FAIL" vertex="1">
+          <mxGeometry relative="1" x="-0.2924" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-15" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontSize=10;" value="Definition Review&lt;br&gt;Verdict = PASS?" topologyNodeId="N-DEF-VERDICT-DECISION" semanticType="RESULT_DECISION" vertex="1">
+          <mxGeometry height="91" width="108" x="608" y="783" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-50" topologyEdgeId="E-D09" value="Authorize &amp; Freeze" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Human Gate&lt;br&gt;Authorize Definition" topologyNodeId="N-DEF-AUTH-GATE" semanticType="HUMAN_GATE" vertex="1">
+          <mxGeometry height="60" width="120" x="828" y="871" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-52" topologyEdgeId="E-D10" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-53" connectable="0" parent="zpEAhJcCgUedrQsony70-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Budget Exhausted" vertex="1">
+          <mxGeometry relative="1" x="-0.2545" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-64" topologyEdgeId="E-D11" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="271" y="898.5" />
+              <mxPoint x="271" y="516" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-68" connectable="0" parent="zpEAhJcCgUedrQsony70-64" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Budget Remains" vertex="1">
+          <mxGeometry relative="1" x="-0.5973" y="-1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-26" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontSize=9;" value="Definition Review&lt;br&gt;Autonomous&lt;br&gt;Budget Remains?" topologyNodeId="N-DEF-BUDGET-DECISION" semanticType="POLICY_DECISION" vertex="1">
+          <mxGeometry height="91" width="108" x="310" y="853" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-72" topologyEdgeId="E-D16" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Accept With Reservation" topologyNodeId="N-DEF-ACCEPT-RESERVATION" semanticType="HUMAN_DECISION_OUTCOME" vertex="1">
+          <mxGeometry height="60" width="120" x="453" y="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-63" topologyEdgeId="E-D15" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="zpEAhJcCgUedrQsony70-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Continue" topologyNodeId="N-DEF-CONTINUE" semanticType="HUMAN_DECISION_OUTCOME" vertex="1">
+          <mxGeometry height="60" width="120" x="155" y="1099" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="Close Task" topologyNodeId="N-DEF-CLOSE" semanticType="TERMINAL_HUMAN_DECISION_OUTCOME" vertex="1">
+          <mxGeometry height="60" width="120" x="304" y="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-178" topologyEdgeId="E-D17" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Frozen Task Definition" topologyNodeId="N-DEF-FROZEN" semanticType="ARTIFACT" vertex="1">
+          <mxGeometry height="60" width="120" x="828" y="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-54" topologyEdgeId="E-D12" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="zpEAhJcCgUedrQsony70-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-55" topologyEdgeId="E-D13" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="zpEAhJcCgUedrQsony70-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-56" topologyEdgeId="E-D14" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Human Gate&lt;br&gt;Definition Escalation" topologyNodeId="N-DEF-ESCALATION-GATE" semanticType="HUMAN_GATE" vertex="1">
+          <mxGeometry height="60" width="120" x="304" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-105" topologyEdgeId="E-V01" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-144">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="999" y="1653" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-106" connectable="0" parent="zpEAhJcCgUedrQsony70-105" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Enabled" vertex="1">
+          <mxGeometry relative="1" x="-0.2063" y="2" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-191" topologyEdgeId="E-V02" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-151">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="854" y="1605" />
+              <mxPoint x="854" y="1740.3" />
+              <mxPoint x="786" y="1740.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-192" connectable="0" parent="zpEAhJcCgUedrQsony70-191" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Disabled" vertex="1">
+          <mxGeometry relative="1" x="-0.1231" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-77" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Validate Change&lt;br&gt;Enabled?" topologyNodeId="N-VALIDATE-CONFIG" semanticType="CONFIGURATION_DECISION" vertex="1">
+          <mxGeometry height="91" width="108" x="945" y="1514" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-179" topologyEdgeId="E-I01" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="zpEAhJcCgUedrQsony70-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-84" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Control Plane&lt;br&gt;Dispatch Implement" topologyNodeId="N-IMPL-DISPATCH" semanticType="CONTROL_PLANE_ORCHESTRATOR" vertex="1">
+          <mxGeometry height="60" width="120" x="1008" y="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-91" topologyEdgeId="E-I02" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-99">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="621" y="1298" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-180" connectable="0" parent="zpEAhJcCgUedrQsony70-91" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Candidate Change" vertex="1">
+          <mxGeometry relative="1" x="0.0676" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-88" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Implementer" topologyNodeId="N-IMPL-EXECUTE" semanticType="ENGINEERING_MODULE" vertex="1">
+          <mxGeometry height="60" width="120" x="561" y="1198" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-112" topologyEdgeId="E-I07" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-125">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="463" y="1683" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-113" connectable="0" parent="zpEAhJcCgUedrQsony70-112" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="FAIL" vertex="1">
+          <mxGeometry relative="1" x="-0.1224" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-138" topologyEdgeId="E-I06" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="808" y="1589.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-141" connectable="0" parent="zpEAhJcCgUedrQsony70-138" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="PASS" vertex="1">
+          <mxGeometry relative="1" x="-0.4739" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-93" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Verify" topologyNodeId="N-VERIFY-EXECUTE" semanticType="ENGINEERING_MODULE" vertex="1">
+          <mxGeometry height="60" width="120" x="561" y="1653" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-102" topologyEdgeId="E-I04" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-93" value="Applicable">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-137" topologyEdgeId="E-I05" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="748" y="1559.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-140" connectable="0" parent="zpEAhJcCgUedrQsony70-137" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="None Applicable" vertex="1">
+          <mxGeometry relative="1" x="-0.1507" y="-2" as="geometry">
+            <mxPoint y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-95" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontSize=9;" value="Applicable Prescribed&lt;br&gt;Deterministic&lt;br&gt;Checks?" topologyNodeId="N-VERIFY-APPLICABILITY" semanticType="APPLICABILITY_DECISION" vertex="1">
+          <mxGeometry height="91" width="108" x="567" y="1514" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-101" topologyEdgeId="E-I03" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-99" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Control Plane&lt;br&gt;Route Candidate Change" topologyNodeId="N-IMPL-ROUTE" semanticType="CONTROL_PLANE_ORCHESTRATOR" vertex="1">
+          <mxGeometry height="60" width="120" x="561" y="1406" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-122" topologyEdgeId="E-I10" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="zpEAhJcCgUedrQsony70-121">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="349" y="1536.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-123" connectable="0" parent="zpEAhJcCgUedrQsony70-122" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Budget Exhausted" vertex="1">
+          <mxGeometry relative="1" x="-0.4034" y="3" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-130" topologyEdgeId="E-I11" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-131" topologyEdgeId="E-I12" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-121" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Human Gate&lt;br&gt;Verification Escalation" topologyNodeId="N-VERIFY-ESCALATION-GATE" semanticType="HUMAN_GATE" vertex="1">
+          <mxGeometry height="60" width="120" x="149" y="1658" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-186" topologyEdgeId="E-I08" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-185">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-188" connectable="0" parent="zpEAhJcCgUedrQsony70-186" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Budget Remains" vertex="1">
+          <mxGeometry relative="1" x="-0.3443" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-125" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontSize=9;" value="Verification&lt;br&gt;Autonomous&lt;br&gt;Budget Remains?" topologyNodeId="N-VERIFY-BUDGET-DECISION" semanticType="POLICY_DECISION" vertex="1">
+          <mxGeometry height="91" width="108" x="349" y="1454" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-135" topologyEdgeId="E-I13" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="zpEAhJcCgUedrQsony70-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-128" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Continue" topologyNodeId="N-VERIFY-CONTINUE" semanticType="HUMAN_DECISION_OUTCOME" vertex="1">
+          <mxGeometry height="60" width="120" x="64" y="1777" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-129" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="Close Task" topologyNodeId="N-VERIFY-CLOSE" semanticType="TERMINAL_HUMAN_DECISION_OUTCOME" vertex="1">
+          <mxGeometry height="60" width="120" x="214" y="1777" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-134" topologyEdgeId="E-I14" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-133" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Control Plane&lt;br&gt;Resume Verification Remediation" topologyNodeId="N-VERIFY-HUMAN-REMEDIATION" semanticType="CONTROL_PLANE_ORCHESTRATOR" vertex="1">
+          <mxGeometry height="60" width="120" x="-25" y="1198" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-149" topologyEdgeId="E-V03" value="Reviewer Verdict" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-144" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Validate Change&lt;br&gt;Reviewer" topologyNodeId="N-VALIDATE-REVIEWER" semanticType="REVIEW_MODULE" vertex="1">
+          <mxGeometry height="60" width="120" x="939" y="1690" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-152" topologyEdgeId="E-V04" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-151">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-153" connectable="0" parent="zpEAhJcCgUedrQsony70-152" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="PASS" vertex="1">
+          <mxGeometry relative="1" x="-0.0505" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-158" topologyEdgeId="E-V05" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-175" connectable="0" parent="zpEAhJcCgUedrQsony70-158" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="FAIL" vertex="1">
+          <mxGeometry relative="1" x="-0.0556" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-148" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontSize=10;" value="Validation Review&lt;br&gt;Verdict = PASS?" topologyNodeId="N-VALIDATE-VERDICT-DECISION" semanticType="RESULT_DECISION" vertex="1">
+          <mxGeometry height="91" width="108" x="945" y="1860" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-155" topologyEdgeId="E-V06" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-154">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-156" connectable="0" parent="zpEAhJcCgUedrQsony70-155" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Publish Authorization" vertex="1">
+          <mxGeometry relative="1" x="-0.2929" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-151" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Human Gate&lt;br&gt;Publish Authorization" topologyNodeId="N-PUBLISH-AUTH-GATE" semanticType="HUMAN_GATE" vertex="1">
+          <mxGeometry height="60" width="120" x="726" y="1875.5" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-154" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="Publish" topologyNodeId="N-PUBLISH" semanticType="ENGINEERING_MODULE" vertex="1">
+          <mxGeometry height="60" width="120" x="726" y="2117" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-173" topologyEdgeId="E-V09" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-170">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-174" connectable="0" parent="zpEAhJcCgUedrQsony70-173" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Budget Exhausted" vertex="1">
+          <mxGeometry relative="1" x="-0.25" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-182" topologyEdgeId="E-V07" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-181">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-184" connectable="0" parent="zpEAhJcCgUedrQsony70-182" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Budget Remains" vertex="1">
+          <mxGeometry relative="1" x="-0.0364" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-157" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontSize=9;" value="Validation Review&lt;br&gt;Autonomous&lt;br&gt;Budget Remains?" topologyNodeId="N-VALIDATE-BUDGET-DECISION" semanticType="POLICY_DECISION" vertex="1">
+          <mxGeometry height="91" width="108" x="1125" y="1860" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-190" topologyEdgeId="E-V13" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-181">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1445" y="2147" />
+              <mxPoint x="1445" y="1720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-165" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Continue" topologyNodeId="N-VALIDATE-CONTINUE" semanticType="HUMAN_DECISION_OUTCOME" vertex="1">
+          <mxGeometry height="60" width="120" x="1268" y="2117" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-166" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="Close Task" topologyNodeId="N-VALIDATE-CLOSE" semanticType="TERMINAL_HUMAN_DECISION_OUTCOME" vertex="1">
+          <mxGeometry height="60" width="120" x="1119" y="2117" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-168" topologyEdgeId="E-V11" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="zpEAhJcCgUedrQsony70-166">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-169" topologyEdgeId="E-V10" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zpEAhJcCgUedrQsony70-165">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-172" topologyEdgeId="E-V12" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-171">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-170" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Human Gate&lt;br&gt;Validation Escalation" topologyNodeId="N-VALIDATE-ESCALATION-GATE" semanticType="HUMAN_GATE" vertex="1">
+          <mxGeometry height="60" width="120" x="1119" y="2011" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-189" topologyEdgeId="E-V14" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-154">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-171" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Accept With Reservation" topologyNodeId="N-VALIDATE-ACCEPT-RESERVATION" semanticType="HUMAN_DECISION_OUTCOME" vertex="1">
+          <mxGeometry height="60" width="120" x="970" y="2117" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-183" topologyEdgeId="E-V08" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1179" y="1228" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-181" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Control Plane&lt;br&gt;Dispatch Validation Remediation" topologyNodeId="N-VALIDATE-REMEDIATION-DISPATCH" semanticType="CONTROL_PLANE_ORCHESTRATOR" vertex="1">
+          <mxGeometry height="60" width="120" x="1119" y="1690" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-187" topologyEdgeId="E-I09" edge="1" parent="1" source="zpEAhJcCgUedrQsony70-185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="zpEAhJcCgUedrQsony70-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpEAhJcCgUedrQsony70-185" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Control Plane&lt;br&gt;Dispatch Verification Remediation" topologyNodeId="N-VERIFY-AUTONOMOUS-REMEDIATION" semanticType="CONTROL_PLANE_ORCHESTRATOR" vertex="1">
+          <mxGeometry height="60" width="120" x="343" y="1333" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

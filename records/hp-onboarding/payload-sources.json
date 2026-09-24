@@ -1,0 +1,458 @@
+{
+ "schema": "hp-onboarding-payload-sources/v1",
+ "purpose": "Per-file sources of the HarnessPlane files placed in this repository by the J-07 manual onboarding (HarnessPlane task feature-t19).",
+ "statement": "Verification-only source-file copy for the joint slice acceptance. This is not the HarnessPlane installation form (spec FR-02): there is no version self-report, upgrade or uninstall boundary; the distribution form belongs to a later HarnessPlane task. Each hp-copy file equals the named blob byte for byte and can be checked by SHA-256 alone.",
+ "payload_commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+ "runtime_bundle": {
+  "runtime_id": "runtime:harness-plane",
+  "version": "0.1.0-dev.ea1999bfb4ca",
+  "archive_sha256": "fa4459c337addd8d50d83893a94ecbc1d72798110cec5df66a672af3a34492a6",
+  "note": "The review-channel code under mechanisms/review-channel/ comes from the same commit as the review-channel members of this bundle."
+ },
+ "counts": {
+  "files": 37,
+  "hp_copy": 36,
+  "slice_owned": 1
+ },
+ "files": [
+  {
+   "path": "mechanisms/review-channel/review_channel.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel.py",
+    "blob": "2170a38aedee4ac81b793a8d9479015eeebdd8f1",
+    "bytes": 102475,
+    "sha256": "36bc48764de9c40b2db422ba73778d957e0973d8c81faf61f2b9b14fee95bd15"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_base.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_base.py",
+    "blob": "4a8d5cea5dc996bf620216317f22411f45d4e02d",
+    "bytes": 18961,
+    "sha256": "02cf928d016201647a5b5fc2b59a173ac748fd6f74aa3013161aea8ef3d7c089"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_contract.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_contract.py",
+    "blob": "b1194c780e348f592ed1260a6232ee5f65ae3f5e",
+    "bytes": 23811,
+    "sha256": "f24d4fa7adcca94b95f6f6798865e8d82a1f88df92f449f09159c1c25eb9ed9e"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_decisions.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_decisions.py",
+    "blob": "544ff3f1615b4f9bb0e8360d395b4bbe58bea8c9",
+    "bytes": 10371,
+    "sha256": "7f3ca184a256d34477f774e2f61aa79be60480a39f807848eb630bbf204d1fd5"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_execution.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_execution.py",
+    "blob": "b3023c674bd8913d336fe68e809bf2a1fa5e643f",
+    "bytes": 22912,
+    "sha256": "578f6de6330142ca92385c2ad9af8725f833dbc60c1ffe79b4b4047c1817df95"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_history.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_history.py",
+    "blob": "73d8c2496246de47411490553c3c08d7c5832e58",
+    "bytes": 6531,
+    "sha256": "597dde38d1e069e9c71efae821809740be15bdad76d68258d4d690282065a379"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_inputs.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_inputs.py",
+    "blob": "e227a605cb489a6104fd628854a632b8373188b2",
+    "bytes": 38720,
+    "sha256": "f8ddaa82a2b6f89e91ecdbef3fd0ca72b8739f30243735594e73abd732f12c76"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_instruction.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_instruction.py",
+    "blob": "41eca187373486ff78e2752d562d3e3f2e87b03f",
+    "bytes": 15577,
+    "sha256": "a3a5c22ca30ed35eee2f583b7ec9f47b85aa2779fa792dcdd8b845770dced6aa"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_receipt.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_receipt.py",
+    "blob": "b4f6eb59cced2fc335f08b815c1683eaf9b5ddc8",
+    "bytes": 31306,
+    "sha256": "82941009e85ffadb7b5288f3c6771891749a14c9dbb413aa47844417901589aa"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_registry.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_registry.py",
+    "blob": "81d6bf211b7cd34c9aee06c235462eb52c85a695",
+    "bytes": 20517,
+    "sha256": "ca6aca956250295d2da4fa3b5335f73ffa50dda166acb983de3b347b01f3b50d"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_request.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_request.py",
+    "blob": "ba06ce9eef149734f79fe1579e99b7a71980f06f",
+    "bytes": 17344,
+    "sha256": "1f02131143fec9c19dd7ba69b3e1b9e4e7eb03c70896778dc6396200bee16cdf"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_runtime.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_runtime.py",
+    "blob": "72633404f6e7c4becae6cdde6a819f8953bd7745",
+    "bytes": 7573,
+    "sha256": "57c3a26c76c13db2bfc84878d17f6495a69ec4c8cc1b1b7c16339698f094b3ff"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_secrets.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_secrets.py",
+    "blob": "92a3fdbf74025061197cd7d3df34f7550275f81f",
+    "bytes": 7138,
+    "sha256": "e14cbc908f13b2f8ee5089d6ded763eed39540f8249fd310c326717643fde80b"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_selection.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_selection.py",
+    "blob": "3771e5a274344d746ab638669dca0894746565e4",
+    "bytes": 18011,
+    "sha256": "4c00b86dd61292795e0b2c8113d02bb0ae30d40be608d997354f80063edcc467"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_taskbook.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_taskbook.py",
+    "blob": "dec64f56cadcc5d7d70f82f7a7f10034ed8c2120",
+    "bytes": 14079,
+    "sha256": "9d48199de4764b57b05b6976dc1d04c7c5f67a1871364dbb50b804f6700486f7"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_verdict.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_verdict.py",
+    "blob": "1e4bc3dd63850a8dc40ef85a97323ab00269ff47",
+    "bytes": 33425,
+    "sha256": "6d443e5ab646e72db4f69a57066053ecf4dab393f654b5f30fdddd0ee0b3d6af"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_evidence.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_evidence.py",
+    "blob": "964062d3547f9acb99e5eec10cb750d6bad081ff",
+    "bytes": 97800,
+    "sha256": "55b4938ba405c569717108ef27ac5584c263fe372d8f22d1cebfcc5301cd045c"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/adapters/__init__.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/adapters/__init__.py",
+    "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/adapters/claude.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/adapters/claude.py",
+    "blob": "a45a07fbd52a6184a107382cf1e5ea910c811f44",
+    "bytes": 961,
+    "sha256": "4d992c827741527368305bd4f20288b71495f1b9250b60f7b618b6818011e102"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/adapters/codex.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/adapters/codex.py",
+    "blob": "2f6ff9127b9700bf74de212047646c70eecb3d70",
+    "bytes": 18049,
+    "sha256": "d2c98f75010c8c9a5b71691ade42bf01de306e38fec01aee24d9dbb0b8aecfec"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/adapters/http.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/adapters/http.py",
+    "blob": "3bad0a7872f6ad0f7694c145265f4ff9ce9643ef",
+    "bytes": 12461,
+    "sha256": "89e3d55d0cd6880dd6547348a9cff741beeae5b746c5a64a0139dccabf99094e"
+   }
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_registry.json",
+   "ownership": "slice-owned",
+   "bytes": 767,
+   "sha256": "e2b74c67f1ed5654e601b6a0a4f921356cced363fb77e7a19be6aeaef38b68ff",
+   "note": "Created for this repository; not copied from HarnessPlane. Loads with the unmodified review-channel loader; no PROBED or REVIEW_ENABLED capability, no execution port, no model mapping."
+  },
+  {
+   "path": "mechanisms/review-channel/review_channel_execution_schema.json",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/review-channel/review_channel_execution_schema.json",
+    "blob": "e895656aa6b4fd127a047cf93a8168c1ef7f79c5",
+    "bytes": 17876,
+    "sha256": "38956ce218f465d21469b910952d46b063055566f8b8892a51e7dfbcad3ab55d"
+   }
+  },
+  {
+   "path": "mechanisms/gates/rules_catalog.json",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/gates/rules_catalog.json",
+    "blob": "de8ee93c4ee6ea290a74d7bad2403b51c097a37a",
+    "bytes": 1452,
+    "sha256": "90df73775a263bf5587a2a1f0a845637b02a200336cde7033037fe03fec8bc80"
+   }
+  },
+  {
+   "path": "mechanisms/repo-layout/history_read.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/repo-layout/history_read.py",
+    "blob": "fc242257fcc2289915144a05fc6d3b032132f529",
+    "bytes": 17644,
+    "sha256": "92a8b7b13c893c2bdfb71be0104c973a16dc01558b94df046107d0b3039179d0"
+   }
+  },
+  {
+   "path": "mechanisms/artifact-templates/artifact_lint.py",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/artifact-templates/artifact_lint.py",
+    "blob": "7170f4338ee1b39a777cf9a088a43d24a65f22c2",
+    "bytes": 41851,
+    "sha256": "aa916c23cca6a02a142bb6a598f45623027d062cabd4453a5a3124f382888c30"
+   }
+  },
+  {
+   "path": "mechanisms/delivery-method/MVP_Workflow_v5.drawio",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/delivery-method/MVP_Workflow_v5.drawio",
+    "blob": "99165dd55138eb238b6f294c2993bef579c02854",
+    "bytes": 37126,
+    "sha256": "8fc429a52b2d58d6abf8ad04320bcd31e613f162ca4192cb6548217da4b9f79d"
+   }
+  },
+  {
+   "path": "mechanisms/artifact-templates/design.template.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/artifact-templates/design.template.md",
+    "blob": "3b99fd1870f7c50e369454f2da9a1fc742268a82",
+    "bytes": 2077,
+    "sha256": "7949b9507f0e10c893d5379dadec126c7ea867c490b502a773471447477e9959"
+   }
+  },
+  {
+   "path": "mechanisms/artifact-templates/milestones.template.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/artifact-templates/milestones.template.md",
+    "blob": "5ec15b03dc285f8077af682be809faf3a73dee49",
+    "bytes": 3242,
+    "sha256": "efa7978548e08258cd56b97fac94a516e490441c605edb984885075ece9245b7"
+   }
+  },
+  {
+   "path": "mechanisms/artifact-templates/proposal.template.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/artifact-templates/proposal.template.md",
+    "blob": "b2a1f6dc54f1c610b7281310c377b4c25effd10e",
+    "bytes": 5269,
+    "sha256": "9b423401b8c1b3529fb2352fdeee5ef8141c1ef996808b6ae70588f176add6de"
+   }
+  },
+  {
+   "path": "mechanisms/artifact-templates/ruling.template.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/artifact-templates/ruling.template.md",
+    "blob": "db9c92469bd7e6eacb674234e5ff7621cf602c03",
+    "bytes": 2070,
+    "sha256": "be66959b45d2510fa04a45692107212a2a4139ff90ad97c476f6134df11fc171"
+   }
+  },
+  {
+   "path": "mechanisms/artifact-templates/spec.template.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/artifact-templates/spec.template.md",
+    "blob": "7e940e45f2297d9719baf3d7e892d81b77e2abcc",
+    "bytes": 3212,
+    "sha256": "6372ce553e1e875dc281373b0b5c250e08e0d427f0b79f012fa282d53b26b817"
+   }
+  },
+  {
+   "path": "mechanisms/artifact-templates/task.template.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": "mechanisms/artifact-templates/task.template.md",
+    "blob": "375d363f180c768d3737ffa51b28fd9d10d31821",
+    "bytes": 4115,
+    "sha256": "22ed77c20bc83399a6acec70bda51dfd807e59aa41ee94d29bc0acee6bffef2d"
+   }
+  },
+  {
+   "path": ".agents/skills/cst-review/SKILL.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": ".agents/skills/cst-review/SKILL.md",
+    "blob": "90b40b9d03059cf25be41352666c10196b375972",
+    "bytes": 20136,
+    "sha256": "6897cb572361d659cb04926a7db8afab978c9d74dff511fe794609f768f7bf14"
+   }
+  },
+  {
+   "path": ".agents/skills/cst-ship/SKILL.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": ".agents/skills/cst-ship/SKILL.md",
+    "blob": "d0c05193fc50000eb8567ba3904b3d41a0f8d76e",
+    "bytes": 4290,
+    "sha256": "c8b900ad2941104654bc7511eeabcbea0d62226f7dda52decb13d5546cd5a80f"
+   }
+  },
+  {
+   "path": ".agents/skills/proposal-guide/SKILL.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": ".agents/skills/proposal-guide/SKILL.md",
+    "blob": "5d53836d8de3db69fd5854f1be591ad07bedd40e",
+    "bytes": 11020,
+    "sha256": "9e629121c88c15b1ff24def11a163e7405e9dbc465e799bf064192e538c04f56"
+   }
+  },
+  {
+   "path": ".agents/skills/verify-from-text/SKILL.md",
+   "ownership": "hp-copy",
+   "source": {
+    "product": "HarnessPlane",
+    "commit": "ea1999bfb4ca2f4bcd295ea22cb0e76c1d52fb23",
+    "path": ".agents/skills/verify-from-text/SKILL.md",
+    "blob": "7de727056bd071bcd59d3fe4cff8a4e481d6fc27",
+    "bytes": 3465,
+    "sha256": "339acbf549b5898c1f28e83d1a28625afb29575432b226ae30a4166600588dd1"
+   }
+  }
+ ]
+}

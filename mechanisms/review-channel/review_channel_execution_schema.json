@@ -1,0 +1,780 @@
+{
+  "source": {
+    "contract": "0.1.0-draft.5",
+    "schema_sha256": "3bde9dfb96dcffe7e14c1117e6e7f48a7e14d9c9b1bbd7bb6a12a7515ac7a7b8"
+  },
+  "definitions": {
+    "ActualBinding": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "source": {
+          "enum": [
+            "protocol-init",
+            "protocol-result",
+            "adapter-report"
+          ]
+        },
+        "observedModels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "maxItems": 8
+        }
+      },
+      "required": [
+        "model",
+        "source",
+        "observedModels"
+      ],
+      "additionalProperties": false
+    },
+    "EvidenceRef": {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "enum": [
+            "host",
+            "runtime"
+          ]
+        },
+        "resourceHandle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "scopeRef": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "objectRef": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "mediaType": {
+          "enum": [
+            "text/plain",
+            "text/markdown",
+            "text/html",
+            "application/json",
+            "application/octet-stream"
+          ]
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "authority",
+        "resourceHandle",
+        "scopeRef",
+        "objectRef",
+        "revision",
+        "mediaType",
+        "bytes",
+        "digest"
+      ],
+      "additionalProperties": false
+    },
+    "ExecutionAccounting": {
+      "type": "object",
+      "properties": {
+        "toolCalls": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "runSeconds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "outputBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "waited": {
+          "type": "boolean"
+        },
+        "pidGoneAfterExit": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "toolCalls",
+        "runSeconds",
+        "outputBytes",
+        "waited",
+        "pidGoneAfterExit"
+      ],
+      "additionalProperties": false
+    },
+    "ExecutionBinding": {
+      "type": "object",
+      "properties": {
+        "profileDigest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "agent": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "modelVendor": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "routeVendor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "credentialRef": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "configurationRevision": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "maxLength": 32
+        }
+      },
+      "required": [
+        "profileDigest",
+        "agent",
+        "model",
+        "modelVendor",
+        "routeVendor",
+        "credentialRef",
+        "configurationRevision"
+      ],
+      "additionalProperties": false
+    },
+    "ExecutionProfile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "trustModel": {
+          "enum": [
+            "current-user"
+          ]
+        },
+        "purpose": {
+          "enum": [
+            "chat",
+            "widget-generation",
+            "coding-implementer",
+            "review"
+          ]
+        },
+        "programIdentity": {
+          "$ref": "#/definitions/ProgramIdentity"
+        },
+        "nativeApprovalPolicy": {
+          "enum": [
+            "auto-deny",
+            "expected-range-gate",
+            "trusted-ui-prompt"
+          ]
+        },
+        "configurationDigest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+          },
+          "maxItems": 32
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+          },
+          "maxItems": 32
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+          },
+          "maxItems": 32
+        },
+        "maxContextBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "maxToolCalls": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "maxRunSeconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 600
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "digest",
+        "trustModel",
+        "purpose",
+        "programIdentity",
+        "nativeApprovalPolicy",
+        "configurationDigest",
+        "capabilities",
+        "limitations",
+        "operations",
+        "maxContextBytes",
+        "maxToolCalls",
+        "maxRunSeconds"
+      ],
+      "additionalProperties": false
+    },
+    "HostEvidenceRef": {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "enum": [
+            "host"
+          ]
+        },
+        "resourceHandle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "scopeRef": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "objectRef": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "mediaType": {
+          "enum": [
+            "text/plain",
+            "text/markdown",
+            "text/html",
+            "application/json",
+            "application/octet-stream"
+          ]
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "authority",
+        "resourceHandle",
+        "scopeRef",
+        "objectRef",
+        "revision",
+        "mediaType",
+        "bytes",
+        "digest"
+      ],
+      "additionalProperties": false
+    },
+    "PhysicalExecution": {
+      "type": "object",
+      "properties": {
+        "executionRef": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "scopeRef": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "state": {
+          "enum": [
+            "queued",
+            "reserved",
+            "running",
+            "stopping",
+            "stopped",
+            "completed",
+            "failed",
+            "unknown"
+          ]
+        },
+        "connectionRef": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "configurationRevision": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "maxLength": 32
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "requestIdentity": {
+          "$ref": "#/definitions/RequestIdentity"
+        },
+        "supervisor": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ProcessIdentity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "approvalDecisionRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+          },
+          "maxItems": 32
+        },
+        "actualBinding": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ActualBinding"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stopReason": {
+          "anyOf": [
+            {
+              "enum": [
+                "cancelled",
+                "timeout",
+                "tool-call-budget",
+                "output-limit",
+                "signal"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accounting": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ExecutionAccounting"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exit": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ProcessExit"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observationCompleteness": {
+          "enum": [
+            "complete",
+            "partial",
+            "unknown"
+          ]
+        },
+        "resultRef": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/EvidenceRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 2048
+        }
+      },
+      "required": [
+        "executionRef",
+        "scopeRef",
+        "state",
+        "connectionRef",
+        "configurationRevision",
+        "model",
+        "requestIdentity",
+        "supervisor",
+        "approvalDecisionRefs",
+        "actualBinding",
+        "stopReason",
+        "accounting",
+        "exit",
+        "observationCompleteness",
+        "resultRef",
+        "reason"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "stopped"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "stopReason": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "enum": [
+                  "queued",
+                  "reserved",
+                  "running",
+                  "completed"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "stopReason": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "enum": [
+                  "queued",
+                  "reserved"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "actualBinding": {
+                "type": "null"
+              },
+              "accounting": {
+                "type": "null"
+              },
+              "exit": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "completed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "exit": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "unknown"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "observationCompleteness": {
+                "enum": [
+                  "partial",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ProcessExit": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "signal": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 32
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pipesClosed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "code",
+        "signal",
+        "pipesClosed"
+      ],
+      "additionalProperties": false
+    },
+    "ProcessIdentity": {
+      "type": "object",
+      "properties": {
+        "pid": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "startTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "image": {
+          "type": "string",
+          "maxLength": 1024
+        }
+      },
+      "required": [
+        "pid",
+        "startTime",
+        "image"
+      ],
+      "additionalProperties": false
+    },
+    "ProgramIdentity": {
+      "type": "object",
+      "properties": {
+        "launcher": {
+          "type": "string",
+          "maxLength": 1024
+        },
+        "binaryDigest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "version": {
+          "type": "string",
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "launcher",
+        "binaryDigest",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "RequestIdentity": {
+      "type": "object",
+      "properties": {
+        "operationId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]*$"
+        },
+        "requestDigest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "profileDigest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "operationId",
+        "requestDigest",
+        "profileDigest"
+      ],
+      "additionalProperties": false
+    },
+    "ReviewerApplicability": {
+      "type": "object",
+      "properties": {
+        "executionPort": {
+          "enum": [
+            "embedded",
+            "standalone",
+            "any"
+          ]
+        },
+        "purpose": {
+          "enum": [
+            "review"
+          ]
+        },
+        "trustModel": {
+          "enum": [
+            "current-user"
+          ]
+        },
+        "profileDigest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "configurationRevision": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "maxLength": 32
+        },
+        "credentialRevision": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "maxLength": 32
+        }
+      },
+      "required": [
+        "executionPort",
+        "purpose",
+        "trustModel",
+        "profileDigest",
+        "configurationRevision",
+        "credentialRevision"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

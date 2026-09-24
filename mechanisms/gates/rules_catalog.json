@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "profiles": {
+    "bootstrap": {
+      "top_level_members": {
+        "upstream": "repo-layout §4",
+        "values": [
+          ".agents",
+          ".claude",
+          "HANDOFF",
+          "apps",
+          "authority",
+          "changelog",
+          "decisions",
+          "mechanisms",
+          "records",
+          "review-attempts",
+          "reviews",
+          "sdd",
+          "tasks",
+          "ui"
+        ]
+      },
+      "root_tracked_members": {
+        "upstream": "repo-layout §8",
+        "values": [
+          ".gitignore",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "README.md"
+        ]
+      },
+      "on_demand_dirs_common": {
+        "upstream": "repo-layout §6.3",
+        "values": [
+          "decisions"
+        ]
+      },
+      "on_demand_dirs_local": {
+        "upstream": "repo-layout §6.3 / §6.4 / §6.5 / §6.7",
+        "values": [
+          "HANDOFF",
+          "authority",
+          "changelog",
+          "ui"
+        ]
+      }
+    }
+  },
+  "generated": [
+    {
+      "path": "mechanisms/MECHANISMS.md",
+      "source": "mechanisms/gates/mechanisms_source.md",
+      "data": null,
+      "table_names": [
+        "units"
+      ]
+    },
+    {
+      "path": "README.md",
+      "source": "mechanisms/gates/root_readme_source.md",
+      "data": "mechanisms/gates/readme_data.json",
+      "table_names": [
+        "top_level_map",
+        "subject_roster"
+      ]
+    }
+  ]
+}
